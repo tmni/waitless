@@ -1,0 +1,124 @@
+body {
+	font: Lato;
+}
+
+#home {
+	background-color: white; /* change */
+}
+
+#empty-table-header {
+	color: white;
+}
+
+#detail-view-list-item {
+	color: #808B96;
+}
+
+#history-header {
+	margin-top: 15%;
+	margin-bottom: 10%;
+	font-size: 60pt;
+}
+
+table {
+	font-size: 35pt;
+	text-align: center;
+}
+
+p {
+	margin-left: 15%;
+	margin-right: 15%;
+	font-size: 35pt;
+	text-align: center;
+}
+
+h1 {
+	font-size: 70pt;
+	text-align: center;
+	margin-top: 25%
+}
+
+h2 {
+	font-size: 50pt;
+	text-align: center;
+	margin-top: 20%;
+}
+
+h3 {
+	font-size: 30pt;
+	text-align: center;
+}
+
+.table td {
+	vertical-align: middle;
+}
+
+#no-height {
+	height: 100px;
+}
+
+tr {
+	font-size: 35pt;
+	height: 205px;
+	margin: auto;
+	text-align: center;
+}
+
+submit-purchase {
+	margin-bottom: 10%;
+}
+
+#home-buttons {
+	margin-top: 20%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    justify-content: center;
+}
+
+.cancel {
+    font-size: 10px;
+}
+
+button {
+	margin-bottom: 30px;
+}
+
+.btn {
+	padding: 40px 40px;
+	border-radius: 30px;
+	font-size: 45pt;
+	width: 40%;
+}
+
+#scanning {
+	margin-top: 5%;
+	/* color: #2471A3; change */
+}
+
+#location-instructions {
+	margin-top: 10%;
+}
+
+#scan-checkout {
+	margin-top: 10%;
+	margin-left: 60%;
+	padding: 30px 20px;
+	border-radius: 30px;
+	font-size: 35pt;
+	width: 35%;
+}
+
+#scanner {
+	margin-top: 12%;
+	height: 600px;
+	width: 600px;
+	background: black;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+   background-color: #DFF6Fa;
+}
+
