@@ -3,12 +3,12 @@ class HomeController < ApplicationController
   def index
   end
 
-  def about
+  def scan
   end
 
-  def contact
+  def history
   end
 
-  def privacy
+  def cart
   end
-  end
+end
