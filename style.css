@@ -1,0 +1,28 @@
+body {
+	font: Lato;
+}
+
+h1 {
+	font-size: 70pt;
+	text-align: center;
+	margin-top: 30%
+}
+
+#home-buttons {
+	margin-top: 30%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    justify-content: center;
+}
+
+button {
+	margin-bottom: 30px;
+}
+
+.btn {
+	padding: 60px 100px;
+	border-radius: 40px;
+	font-size: 50pt;
+	width: 40%;
+}
