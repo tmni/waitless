@@ -34,6 +34,10 @@ td {
 	font-size: 20pt;
 }
 
+submit-purchase {
+	margin-bottom: 10%;
+}
+
 #home-buttons {
 	margin-top: 20%;
 	display: flex;
