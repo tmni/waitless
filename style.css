@@ -49,8 +49,19 @@ h3 {
 	text-align: center;
 }
 
-td {
-	font-size: 20pt;
+.table td {
+	vertical-align: middle;
+}
+
+#no-height {
+	height: 100px;
+}
+
+tr {
+	font-size: 35pt;
+	height: 205px;
+	margin: auto;
+	text-align: center;
 }
 
 submit-purchase {
