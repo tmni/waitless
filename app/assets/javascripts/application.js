@@ -12,7 +12,4 @@
 //
 //= require rails-ujs
 //= require turbolinks
-//= require 'uri'
-//= require 'json'
-//= require 'net/http'
 //= require_tree .
