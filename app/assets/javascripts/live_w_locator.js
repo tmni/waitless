@@ -277,6 +277,7 @@ $(function() {
             if (result.codeResult && result.codeResult.code) {
                 Quagga.ImageDebug.drawPath(result.line, {x: 'x', y: 'y'}, drawingCtx, {color: 'red', lineWidth: 3});
                 //$.ajax({url: "addToCart", data: {code: result.codeResult.code}, success: function(result) {
+                console.log(result.codeResult.code);
                   //  if (result) {
                     //    $(#success).something = true;
                      //}
