@@ -6,6 +6,25 @@ body {
 	background-color: white; /* change */
 }
 
+#empty-table-header {
+	color: white;
+}
+
+#detail-view-list-item {
+	color: #808B96;
+}
+
+#history-header {
+	margin-top: 15%;
+	margin-bottom: 10%;
+	font-size: 60pt;
+}
+
+table {
+	font-size: 35pt;
+	text-align: center;
+}
+
 p {
 	margin-left: 15%;
 	margin-right: 15%;
@@ -32,7 +51,7 @@ button {
 }
 
 .btn {
-	padding: 50px 80px;
+	padding: 40px 40px;
 	border-radius: 30px;
 	font-size: 45pt;
 	width: 40%;
@@ -63,4 +82,8 @@ button {
 	background: black;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+   background-color: #DFF6Fa;
 }
