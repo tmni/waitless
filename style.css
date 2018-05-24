@@ -38,12 +38,31 @@ h1 {
 	margin-top: 25%
 }
 
+h2 {
+	font-size: 50pt;
+	text-align: center;
+	margin-top: 20%;
+}
+
+h3 {
+	font-size: 30pt;
+	text-align: center;
+}
+
+td {
+	font-size: 20pt;
+}
+
 #home-buttons {
 	margin-top: 20%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
     justify-content: center;
+}
+
+.cancel {
+    font-size: 10px;
 }
 
 button {
@@ -87,3 +106,4 @@ button {
 .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
    background-color: #DFF6Fa;
 }
+

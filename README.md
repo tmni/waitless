@@ -26,3 +26,5 @@ Things you may want to cover:
 To run on local host:
 sudo npm install -g live-server
 live-server .
+
+https://tmni.github.io/waitless/
