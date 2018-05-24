@@ -22,3 +22,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+To run on local host:
+sudo npm install -g live-server
+live-server .
