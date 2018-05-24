@@ -6,16 +6,17 @@
 	  <link rel="stylesheet" href="style.css">
 	  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato">
 	  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+	  <script src="script.js"></script>
 	</head>
 	<body id="home">
 		<div id="location-instructions">
 			<p>{get and show location}</p>
-			<p>Location not accurate? Tap to change locations!</p>
+			<p>Location not accurate? Tap to change locations.</p>
 		</div>
 		<p id="scanning">Start scanning!</p>
 		<!-- INSERT SCANNER HERE -->
 		<div id="scanner">
 		</div>
-		<button id="scan-checkout" type="button" class="btn btn-info">Checkout</button>
+		<button id="scan-checkout" onclick="location.href='mycart.html';" type="button" class="btn btn-info">Checkout</button>
 	</body>
 </html>
