@@ -1,4 +1,4 @@
-class Cart
+module Cart
     # For this application, our cart is simply an array consisting
     # of CartItem structs.  The array is saved as a session variable
     # that the user should have available during the course of their
