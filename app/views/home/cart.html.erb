@@ -8,40 +8,50 @@
    	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	</head>
 	<body>
 		<h2>My Cart</h2>
-		<h3>STORENAME</h3>
 		<br><br><br>
-		<table class="table">
-			  <tbody>
-			    <tr>
-			      <th scope="row">
-                  	<button type="button" class="cancel"><img src="http://cdn.onlinewebfonts.com/svg/img_228759.png" width="20" /></button></th>
-			      <td>Amazon Echo</td>
-			      <td>$49.99</td>
-			    </tr>
-			    <tr>
-			      <th scope="row">
-                  	<button type="button" class="cancel"> <img src="http://cdn.onlinewebfonts.com/svg/img_228759.png" width="20" /></button></th>
-			      <td>Razor Scooter</td>
-			      <td>$121.99</td>
-			    </tr>
-			    <tr>
-			      <th scope="row">
-                  	<button type="button" class="cancel"><img src="http://cdn.onlinewebfonts.com/svg/img_228759.png" width="20" /></button></th>
-			      <td>Kelloggs Frosted Flakes</td>
-			      <td>$2.99</td>
-			    </tr>
-                <tr>
-			      <th scope="row">
-                  <button type="button" class="cancel"><img src="http://cdn.onlinewebfonts.com/svg/img_228759.png" width="20" /></button></th>
-			      <td>Kelloggs Frosted Flakes</td>
-			      <td>$2.99</td>
-			    </tr>
-			  </tbody>
-		</table>
-
+		<table class="table table-striped" id="cartTable">
+		    <tbody>
+		      <tr>
+		        <td> <button onclick="removeRow(0)" id="xButton" type="button" class="cancel"><img src="http://cdn.onlinewebfonts.com/svg/img_228759.png" width="20" /></button> </td>
+		        <td>Cinnamon Toast Crunch</td>
+		        <td>$4.00</td>
+		      </tr>
+		      <tr>
+		        <td><button onclick="removeRow(1)" id="xButton" type="button" class="cancel"><img src="http://cdn.onlinewebfonts.com/svg/img_228759.png" width="20" /></button></td>
+		        <td>Kelloggs Frosted Flakes</td>
+		        <td>$125.42</td>
+		      </tr>
+		      <tr>
+		        <td><button onclick="removeRow(2)" id="xButton" type="button" class="cancel"><img src="http://cdn.onlinewebfonts.com/svg/img_228759.png" width="20" /></button></td>
+		        <td>Lucky Charms</td>
+		        <td>$39.91</td>
+		      </tr>
+		    </tbody>
+	  	</table>
+	  <script>
+    	function removeRow(index) {
+        	document.getElementById("cartTable").deleteRow(index);
+    	}
+    	// function sumPrices() {
+    	// 	var table = document.getElementById("cartTable");
+    	// 	var sum = 0;
+    	// 	for (var i = 0, row; row = table.rows[i]; i++) {
+    	// 		for (var j = 2, col; col = row.cells[j]; j++) {
+    	// 			sum += table[i][j];
+    	// 		}
+    	// 	}
+    	// 	return sum;
+    	// }
+    	// document.getElementById("totalPrice").html(sumPrices);
+	  </script>
 	<div class="container">
+		<div id="totalPrice">
+
+		</div>
+
   <!-- Trigger the modal with a button -->
-  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Submit Purchase</button>
+  <button type="button" id="submitPurchase" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Submit Purchase</button>
+
 
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">

@@ -84,22 +84,26 @@ h2 {
     margin-top: 20%;
 }
 
-h3 {
-    font-size: 30pt;
-    text-align: center;
-}
-
 .table td {
     vertical-align: middle;
+    font-size: 16pt;
 }
 
 #no-height {
     height: 100px;
 }
 
+#submitPurchase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+
 tr {
     font-size: 35pt;
-    height: 205px;
+    height: 100px;
     margin: auto;
     text-align: center;
 }
@@ -108,16 +112,16 @@ submit-purchase {
     margin-bottom: 10%;
 }
 
+#xButton {
+    border-color: black;
+}
+
 #home-buttons {
     margin-top: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-location-instructions {
-    text-align: center;
 }
 
 #change-location {
@@ -130,10 +134,13 @@ location-instructions {
     padding: 30px 30px;
     border-radius: 30px;
     font-size: 45pt;
-    width: 40%;
+    width: 60%;
+    text-align: center;
     background-color: #000000;
     border-color: #000000;
     transition: color .16s ease-in-out,background-color .16s ease-in-out,border-color .16s ease-in-out,box-shadow .16s ease-in-out;
+    margin: 0 auto;
+    font-size: 18pt;
 }
 
 .drawingBuffer {
