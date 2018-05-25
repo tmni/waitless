@@ -49,3 +49,14 @@ localList.push(cap1Location);
           infowindow.open(map, this);
         });
       }
+
+      var lastUpdated = 0;
+      function updateLocation() {
+          if(lastUpdated == localList.length - 1){
+              lastUpdated = 0;
+          } else {
+                lastUpdated++;
+          }
+          var newLocation = localList[lastUpdated][0] + ", " + localList[lastUpdated][1];
+        $('#change-location').text(newLocation);
+      }
