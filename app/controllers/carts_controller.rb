@@ -2,7 +2,6 @@ class CartsController < ApplicationController
   include Cart
 
   def index
-    @items = session[:cart]
     @total = calculate_total_cost
   end
 
