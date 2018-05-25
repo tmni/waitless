@@ -36,22 +36,6 @@
         </table><br>
         <h5>Total: $<%= @total %></h5>
     <% end %>
-	  <script>
-    	function removeRow(index) {
-        	document.getElementById("cartTable").deleteRow(index);
-    	}
-    	// function sumPrices() {
-    	// 	var table = document.getElementById("cartTable");
-    	// 	var sum = 0;
-    	// 	for (var i = 0, row; row = table.rows[i]; i++) {
-    	// 		for (var j = 2, col; col = row.cells[j]; j++) {
-    	// 			sum += table[i][j];
-    	// 		}
-    	// 	}
-    	// 	return sum;
-    	// }
-    	// document.getElementById("totalPrice").html(sumPrices);
-	  </script>
 	<div class="container">
 		<div id="totalPrice">
 
@@ -77,7 +61,8 @@
 
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal" onclick="location.href='history.html';">Confirm</button>
+
+          <button type="button" class="btn btn-default" data-dismiss="modal" onclick= "<% Withdrawal.createWithdrawal("5b03908f322fa06b677938fb", {"medium": "balance","transaction_date": Date.today,"status": "pending","amount": @total,"description": "string"}); session[:cart] = Array.new%>; location.href='history.html';">Confirm</button>
 
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
