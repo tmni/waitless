@@ -26,6 +26,7 @@ class Cart
       ci = CartItem.new(row_id, item_name, price, barcode_id)
       session[:cart].push(ci)
       session[:rows] += 1
+      ci
     end
 
     def remove_from_cart(row_id, item_name, price, barcode_id)

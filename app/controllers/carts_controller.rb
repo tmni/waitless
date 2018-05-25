@@ -7,7 +7,11 @@ class CartsController < ApplicationController
   end
 
   def create
-    add_to_cart(session[:rows], item_name, price, barcode_id)
+    if params[:barcode_id]
+      item = Item.find_by(barcode_id: params[:barcode_id])
+      ci = add_to_cart(session[:rows], item.item_name, item.price, item.barcode_id)
+      ci
+    end
   end
 
   def destroy(row)
