@@ -12,9 +12,11 @@ class CartsController < ApplicationController
         return if c['barcode_id'] == params[:barcode_id].to_i#for loop??
       end
       puts params[:barcode_id]
-      item = Item.find_by(barcode_id: params[:barcode_id])
-      ci = add_to_cart(session[:rows], item.item_name, item.price, item.barcode_id)
-      ci
+      item = Item.find_by(barcode_id: params[:barcode_id].to_i)
+      unless item.nil?
+        ci = add_to_cart(item.item_name, item.price, item.barcode_id)
+        ci
+      end
     end
   end
 

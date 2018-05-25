@@ -4,11 +4,10 @@ module Cart
     # that the user should have available during the course of their
     # interactions w/ system.
 
-    CartItem = Struct.new(:row_id, :item_name, :price, :barcode_id)
+    CartItem = Struct.new(:item_name, :price, :barcode_id)
 
     def create_cart
       session[:cart] ||= Array.new
-      session[:rows] ||= 0
     end
 
     def clear_cart
@@ -17,15 +16,13 @@ module Cart
 
     def destroy_cart
       session[:cart] = nil
-      session[:rows] = nil
     end
 
-    def add_to_cart(row_id, item_name, price, barcode_id)
+    def add_to_cart(item_name, price, barcode_id)
       # only add the registration if not already in the cart
       # if not, create a cart item for easy display later
-      ci = CartItem.new(row_id, item_name, price, barcode_id)
+      ci = CartItem.new(item_name, price, barcode_id)
       session[:cart].push(ci)
-      session[:rows] += 1
       ci
     end
 
