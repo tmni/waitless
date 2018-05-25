@@ -9,27 +9,33 @@
 <!--    	  <%= stylesheet_link_tag "application" %>
  -->   	</head>
 	<body>
+  <% if session[:cart].empty? %>
+  <p>Your cart is empty!</p>
+  <% else %>
 		<h2>My Cart</h2>
-		<br>
-		<table class="table table-striped" id="cartTable">
-		    <tbody>
-		      <tr>
-		        <td> <button onclick="removeRow(0)" id="xButton" type="button" class="cancel"><img src="http://cdn.onlinewebfonts.com/svg/img_228759.png" width="20" /></button> </td>
-		        <td>Cinnamon Toast Crunch</td>
-		        <td>$4.00</td>
-		      </tr>
-		      <tr>
-		        <td><button onclick="removeRow(1)" id="xButton" type="button" class="cancel"><img src="http://cdn.onlinewebfonts.com/svg/img_228759.png" width="20" /></button></td>
-		        <td>Kelloggs Frosted Flakes</td>
-		        <td>$125.42</td>
-		      </tr>
-		      <tr>
-		        <td><button onclick="removeRow(2)" id="xButton" type="button" class="cancel"><img src="http://cdn.onlinewebfonts.com/svg/img_228759.png" width="20" /></button></td>
-		        <td>Lucky Charms</td>
-		        <td>$39.91</td>
-		      </tr>
-		    </tbody>
-	  	</table>
+		<br><br><br>
+
+        <table class="table table-striped" id="cartTable">
+          <thead>
+          <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th colspan="3"></th>
+          </tr>
+          </thead>
+
+          <tbody>
+          <% session[:cart].each do |item| %>
+            <tr>
+              <td><%= item['item_name'] %></td>
+              <td><%= item['price'] %></td>
+              <td><%= link_to 'x', remove_from_cart_path(barcode_id: item['barcode_id']) %></td>
+            </tr>
+          <% end %>
+          </tbody>
+        </table><br>
+        <h5>Total: $<%= @total %></h5>
+    <% end %>
 	  <script>
     	function removeRow(index) {
         	document.getElementById("cartTable").deleteRow(index);
@@ -72,6 +78,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal" onclick="location.href='history.html';">Confirm</button>
+
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>

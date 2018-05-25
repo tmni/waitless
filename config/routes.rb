@@ -6,5 +6,5 @@ Rails.application.routes.draw do
   root 'home#index'
 
   post 'carts', to: 'carts#create', as: :add_to_cart
-  delete 'carts', to: 'carts#destroy', as: :remove_from_cart
+  get 'carts/:barcode_id', to: 'carts#destroy', as: :remove_from_cart
 end
