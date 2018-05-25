@@ -6,6 +6,16 @@ body {
 	background-color: white; /* change */
 }
 
+#logo {
+	width: 700px;
+	height: auto;
+}
+
+#logo-div {
+	text-align: center;
+	margin-top: 22%;
+}
+
 #empty-table-header {
 	color: white;
 }
