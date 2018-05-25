@@ -13,12 +13,34 @@
  *= require_tree .
  *= require_self
  */
+
 body {
     font: Lato;
 }
 
+button {
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 40px 40px;
+    border-radius: 30px;
+    font-size: 45pt;
+    width: 40%;
+}
+
 #home {
     background-color: white; /* change */
+}
+
+#logo {
+    width: 700px;
+    height: auto;
+}
+
+#logo-div {
+    text-align: center;
+    margin-top: 22%;
 }
 
 #empty-table-header {
@@ -64,8 +86,19 @@ h3 {
     text-align: center;
 }
 
-td {
+.table td {
+    vertical-align: middle;
+}
+
+#no-height {
+    height: 100px;
+}
+
+tr {
     font-size: 35pt;
+    height: 205px;
+    margin: auto;
+    text-align: center;
 }
 
 submit-purchase {
@@ -82,17 +115,6 @@ submit-purchase {
 
 .cancel {
     font-size: 10px;
-}
-
-button {
-    margin-bottom: 30px;
-}
-
-.btn {
-    padding: 40px 40px;
-    border-radius: 30px;
-    font-size: 45pt;
-    width: 40%;
 }
 
 #scanning {
@@ -123,6 +145,5 @@ button {
 }
 
 .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
-    background-color: #DFF6Fa;
+   background-color: #DFF6Fa;
 }
-

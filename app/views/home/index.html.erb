@@ -3,13 +3,15 @@
   <meta charset="utf-8">
   <title>Waitless</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-   <link rel="stylesheet" href="../../../style.css">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato">
   <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+  <%= stylesheet_link_tag "application" %>
   <script src="../../../script.js"></script>
 </head>
 <body id="home">
-<img src="logo.png" alt="waitless log"></body>
+<div id = "logo-div">
+  <%= image_tag"logo.png", id: 'logo' %>
+</div>
 <div id="home-buttons">
   <button onclick="location.href='/home/scan';" type="button" class="btn btn-info">Scan</button>
   <button  onclick="location.href='/home/cart';" type="button" class="btn btn-info">Cart</button>
