@@ -9,7 +9,7 @@ class CartsController < ApplicationController
     if params[:barcode_id]
       session[:cart].each do |c| #check for each item in cart
 
-        return if c['barcode_id'] == params[:barcode_id].to_i #for loop??
+        return if c['barcode_id'] == params[:barcode_id]#for loop??
       end
       puts params[:barcode_id]
       item = Item.find_by(barcode_id: params[:barcode_id])
