@@ -36,25 +36,23 @@
 	  <!--<script src="../../../script.js"></script>-->
 	</head>
 	<body id="home">
-		<div id="location-instructions">
-			<p>{get and show location}</p>
-			<p>Location not accurate? Tap to change locations.</p>
-		</div>
-		<p id="scanning">Start scanning!</p>
+        <div id="location-instructions">
+            <button id="change-location" type="button" class="btn btn-info" onclick="updateLocation()">Capital One Labs, 3030 Clarendon Blvd, Arlington, VA 22201</button>
+            <p>Location not accurate? Tap to change locations.</p>
+        </div>
 
-		<section id="container" class="container">
+        <p id="scanning">Start scanning!</p>
+
+        <section id="container" class="container">
 
         <div id="interactive" class="viewport">
             <canvas class="drawingBuffer" width="640" height="480"></canvas>
             <video autoplay="true" preload="auto" src="" muted="true" playsinline="true"></video>
         </div>
         </section>
+        <button onclick="location.href='/home/cart';" id="scan-checkout" type="button" class="btn btn-info">Checkout</button>
 
-		<div id="scanner">
-		</div>
-		<button id="scan-checkout" onclick="location.href='../../../cart.html';" type="button" class="btn btn-info">Checkout</button>
-
-		<!--<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>-->
+        <!--<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>-->
     <script src="//webrtc.github.io/adapter/adapter-latest.js" type="text/javascript"></script>
     <!--<script src="quagga.min.js" type="text/javascript"></script>-->
     <!--<script src="live_w_locator.js" type="text/javascript"></script>-->
@@ -64,4 +62,5 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAggOSRIfpvptp6aGTZSI4wS9RsA1IHNGI&libraries=places&callback=initMap" async defer></script>
     <!--<script src="location.js"></script>-->
 	</body>
+
 </html>
