@@ -60,3 +60,4 @@ localList.push(cap1Location);
           var newLocation = localList[lastUpdated][0] + ", " + localList[lastUpdated][1];
         $('#change-location').text(newLocation);
       }
+
