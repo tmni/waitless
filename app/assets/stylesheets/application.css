@@ -18,8 +18,14 @@ body {
     font: Lato;
 }
 
+#history-table {
+    font-size: 20pt;
+}
+
 button {
     margin-bottom: 30px;
+    background-color: #000000;
+    border-color: #000000;
 }
 
 .btn {
@@ -30,6 +36,11 @@ button {
     background-color: #000000;
     border-color: #000000;
     transition: color .16s ease-in-out,background-color .16s ease-in-out,border-color .16s ease-in-out,box-shadow .16s ease-in-out;
+}
+
+.btn-info {
+    background-color: #000000;
+    border-color: #000000;
 }
 
 #home {
@@ -79,9 +90,9 @@ h1 {
 }
 
 h2 {
-    font-size: 50pt;
+    font-size: 40pt;
     text-align: center;
-    margin-top: 20%;
+    margin-top: 30%;
 }
 
 .table td {
@@ -92,7 +103,7 @@ h2 {
 #no-height {
     height: 100px;
 }
-
+/*
 #submitPurchase {
     display: flex;
     flex-direction: column;
@@ -100,7 +111,7 @@ h2 {
     justify-content: center;
     width: 70%;
 }
-
+*/
 tr {
     font-size: 35pt;
     height: 100px;
@@ -108,8 +119,18 @@ tr {
     text-align: center;
 }
 
-submit-purchase {
+#submit-purchase {
     margin-bottom: 10%;
+    font-size: 20pt;
+    width: 65%;
+    padding: 30px 70px;
+    margin-top: 20%;
+    margin-left: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 }
 
 #xButton {
@@ -122,6 +143,10 @@ submit-purchase {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.modal-p {
+    font-size: 20pt;
 }
 
 #change-location {
