@@ -5,10 +5,12 @@
 	  <title>Waitless</title>
 	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-   	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	</head>
+   	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--    	  <%= stylesheet_link_tag "application" %>
+ -->   	</head>
 	<body>
 		<h2>My Cart</h2>
-		<br><br><br>
+		<br>
 		<table class="table table-striped" id="cartTable">
 		    <tbody>
 		      <tr>
@@ -50,7 +52,7 @@
 		</div>
 
   <!-- Trigger the modal with a button -->
-  <button type="button" id="submitPurchase" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Submit Purchase</button>
+  <button type="button" id="submit-purchase" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Submit Purchase</button>
 
 
   <!-- Modal -->
@@ -63,8 +65,8 @@
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body">
-          <p>Confirmation</p>
-          <p>This order will be charged to your Capital One card ending in ####. Is this okay?</p>
+          <p class="modal-p">Confirmation</p>
+          <p class="modal-p">This order will be charged to your Capital One card ending in ####. Is this okay?</p>
 
 
         </div>

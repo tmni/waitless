@@ -59,6 +59,28 @@
     <div id="map" style="display: none"></div>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAggOSRIfpvptp6aGTZSI4wS9RsA1IHNGI&libraries=places&callback=initMap" async defer></script>
     <!--<script src="location.js"></script>-->
+
+    <!-- Trigger the modal with a button -->
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p id="added"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal" onclick="location.href='history.html';">Confirm</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
     </body>
 
 </html>
