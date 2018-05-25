@@ -116,6 +116,10 @@ submit-purchase {
     justify-content: center;
 }
 
+location-instructions {
+    text-align: center;
+}
+
 #change-location {
     margin-top: 20%;
     display: flex;
@@ -123,6 +127,13 @@ submit-purchase {
     align-items: center;
     justify-content: center;
     white-space: normal;
+    padding: 30px 30px;
+    border-radius: 30px;
+    font-size: 45pt;
+    width: 40%;
+    background-color: #000000;
+    border-color: #000000;
+    transition: color .16s ease-in-out,background-color .16s ease-in-out,border-color .16s ease-in-out,box-shadow .16s ease-in-out;
 }
 
 .drawingBuffer {
