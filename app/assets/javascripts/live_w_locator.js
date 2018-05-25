@@ -287,17 +287,30 @@ $(function() {
         }
     });
 
-    // Quagga.onDetected(function(result) {
-    //     var code = result.codeResult.code;
-    //
-    //     if (App.lastResult !== code) {
-    //         App.lastResult = code;
-    //         var $node = null, canvas = Quagga.canvas.dom.image;
-    //
-    //         $node = $('<li><div class="thumbnail"><div class="imgWrapper"><img /></div><div class="caption"><h4 class="code"></h4></div></div></li>');
-    //         $node.find("img").attr("src", canvas.toDataURL());
-    //         $node.find("h4.code").html(code);
-    //         $("#result_strip ul.thumbnails").prepend($node);
-    //     }
-    // });
+    Quagga.onDetected(function(result) {
+        var code = result.codeResult.code;
+        
+        if (code.length) {
+            $.ajax({
+                method: 'POST',
+                url: '/carts',
+                data: {code: code},
+                success: function(res) {
+                    callback(res);
+                },
+                error: function(res) {
+                    console.log("error");
+                }
+            })
+        }
+        if (App.lastResult !== code) {
+            App.lastResult = code;
+            var $node = null, canvas = Quagga.canvas.dom.image;
+    
+            $node = $('<li><div class="thumbnail"><div class="imgWrapper"><img /></div><div class="caption"><h4 class="code"></h4></div></div></li>');
+            $node.find("img").attr("src", canvas.toDataURL());
+            $node.find("h4.code").html(code);
+            $("#result_strip ul.thumbnails").prepend($node);
+        }
+    });
 });

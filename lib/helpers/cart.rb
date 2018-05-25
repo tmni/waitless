@@ -9,21 +9,24 @@ module AppHelpers
 
     def create_cart
       session[:cart] ||= Array.new
+      session[:rows] ||= 0
     end
 
     def clear_cart
-      session[:cart] = Array.new
+      create_cart
     end
 
     def destroy_cart
       session[:cart] = nil
+      session[:rows] = nil
     end
 
     def add_to_cart(row_id, item_name, price, barcode_id)
       # only add the registration if not already in the cart
       # if not, create a cart item for easy display later
-      ci = CartItem.new(row_id, item_name, price, barcode_id)
+      ci = CartItem.new(session[:rows], row_id, item_name, price, barcode_id)
       session[:cart].push(ci)
+      session[:rows] += 1
     end
 
     def remove_from_cart(row_id, item_name, price, barcode_id)
