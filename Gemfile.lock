@@ -68,6 +68,7 @@ GEM
     ffi (1.9.23)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
+    hirb (0.2.10)
     i18n (1.0.1)
       concurrent-ruby (~> 1.0)
     jbuilder (2.7.0)
@@ -190,6 +191,7 @@ DEPENDENCIES
   capital_one
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
+  hirb (~> 0.2.4)
   jbuilder (~> 2.5)
   jquery-rails (~> 4.3, >= 4.3.1)
   jquery-ui-rails (~> 6.0, >= 6.0.1)

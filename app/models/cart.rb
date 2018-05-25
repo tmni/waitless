@@ -1,5 +1,4 @@
-module AppHelpers
-  module Cart
+class Cart
     # For this application, our cart is simply an array consisting
     # of CartItem structs.  The array is saved as a session variable
     # that the user should have available during the course of their
@@ -24,7 +23,7 @@ module AppHelpers
     def add_to_cart(row_id, item_name, price, barcode_id)
       # only add the registration if not already in the cart
       # if not, create a cart item for easy display later
-      ci = CartItem.new(session[:rows], row_id, item_name, price, barcode_id)
+      ci = CartItem.new(row_id, item_name, price, barcode_id)
       session[:cart].push(ci)
       session[:rows] += 1
     end
@@ -45,5 +44,5 @@ module AppHelpers
       total
     end
 
-  end
 end
+  
