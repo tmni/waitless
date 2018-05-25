@@ -13,8 +13,8 @@
   <p>Your cart is empty!</p>
   <% else %>
 		<h2>My Cart</h2>
-		<br><br><br>
-
+		<br>
+		<h2>Current Account Balance: $<%= Account.getAll[0]["balance"] %></h2>
         <table class="table table-striped" id="cartTable">
           <thead>
           <tr>
@@ -72,7 +72,7 @@
         </div>
         <div class="modal-body">
           <p class="modal-p">Confirmation</p>
-          <p class="modal-p">This order will be charged to your Capital One card ending in ####. Is this okay?</p>
+          <p class="modal-p">This order will be charged to your Capital One card ending in 3785. Is this okay?</p>
 
 
         </div>

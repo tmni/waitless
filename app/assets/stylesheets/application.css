@@ -76,6 +76,11 @@ table {
     text-align: center;
 }
 
+#added-paragraph {
+    margin-top: 60%;
+    margin-right: 10%;
+}
+
 p {
     margin-left: 15%;
     margin-right: 15%;
@@ -97,7 +102,7 @@ h2 {
 
 .table td {
     vertical-align: middle;
-    font-size: 16pt;
+    font-size: 30pt;
 }
 
 #no-height {

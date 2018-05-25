@@ -48,12 +48,13 @@
             <video autoplay="true" preload="auto" src="" muted="true" playsinline="true"></video>
         </div>
         </section>
+        <p id="added-paragraph"></p>
         <button onclick="location.href='/home/cart';" id="scan-checkout" type="button" class="btn btn-info">Checkout</button>
 
         <!--<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>-->
     <script src="//webrtc.github.io/adapter/adapter-latest.js" type="text/javascript"></script>
     <!--<script src="quagga.min.js" type="text/javascript"></script>-->
-    <!--<script src="live_w_locator.js" type="text/javascript"></script>-->
+    <script src="live_w_locator.js" type="text/javascript"></script>
     <script src="https://serratus.github.io/quaggaJS/javascripts/scale.fix.js"></script>
 
     <div id="map" style="display: none"></div>
@@ -62,6 +63,7 @@
 
     <!-- Trigger the modal with a button -->
   <!-- Modal -->
+
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
 
@@ -71,8 +73,9 @@
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body">
-          <p id="added"></p>
+          <!--<p id="added"></p>-->
         </div>
+
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal" onclick="location.href='history.html';">Confirm</button>
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
