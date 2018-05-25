@@ -15,7 +15,7 @@ class CartsController < ApplicationController
       item = Item.find_by(barcode_id: params[:barcode_id].to_i)
       unless item.nil?
         ci = add_to_cart(item.item_name, item.price, item.barcode_id)
-        ci
+        return item.item_name
       end
     end
   end

@@ -298,7 +298,7 @@ $(function() {
                 data: {barcode_id: code},
                 success: function(res) {
 
-                    $('#added-paragraph').text(res + " has been added!");
+                    $('#added-paragraph').text("Item has been added!");
 
 
                 },
