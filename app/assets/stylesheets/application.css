@@ -84,28 +84,36 @@ h2 {
     margin-top: 20%;
 }
 
-h3 {
-    font-size: 30pt;
-    text-align: center;
-}
-
 .table td {
     vertical-align: middle;
+    font-size: 16pt;
 }
 
 #no-height {
     height: 100px;
 }
 
+#submitPurchase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+
 tr {
     font-size: 35pt;
-    height: 205px;
+    height: 100px;
     margin: auto;
     text-align: center;
 }
 
 submit-purchase {
     margin-bottom: 10%;
+}
+
+#xButton {
+    border-color: black;
 }
 
 #home-buttons {
