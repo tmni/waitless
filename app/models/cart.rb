@@ -9,7 +9,7 @@ module Cart
     def create_cart
       session[:cart] ||= Array.new
       session[:rows] ||= 0
-    end
+    end 
 
     def clear_cart
       create_cart
