@@ -1,4 +1,5 @@
 class HomeController < ApplicationController
+  include Cart
 
   def index
   end
@@ -10,5 +11,6 @@ class HomeController < ApplicationController
   end
 
   def cart
+    @total = calculate_total_cart_cost
   end
 end

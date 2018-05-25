@@ -19,8 +19,9 @@ class CartsController < ApplicationController
     end
   end
 
-  def destroy(row)
-    remove_from_cart(row, item_name, price, barcode_id)
+  def destroy
+    remove_from_cart(params[:barcode_id].to_i)
+    redirect_to :cart
   end
 
 end

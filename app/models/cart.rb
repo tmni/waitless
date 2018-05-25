@@ -29,9 +29,9 @@ module Cart
       ci
     end
 
-    def remove_from_cart(row_id, item_name, price, barcode_id)
+    def remove_from_cart(barcode_id)
       session[:cart].each do |ci|
-        session[:cart].delete(ci) if ci['row_id'] == row_id && ci['item_name'] == item_name && ci['price'] == price && ci['barcode_id'] == barcode_id
+        session[:cart].delete(ci) if ci['barcode_id'] == barcode_id
         return
       end
     end
