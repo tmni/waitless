@@ -9,9 +9,11 @@
   </head>
 
   <body>
-  <%= session[:cart] ||= Array.new %>
-  <%= session[:rows] ||= 0 %>
+  <div style="display:none;">
 
+
+  <%= session[:cart] ||= Array.new %>
+  </div>
     <%= yield %>
 
   </body>
